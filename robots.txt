@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luckytimothy24-a11y.github.io/PORTOFOLIO/sitemap.xml

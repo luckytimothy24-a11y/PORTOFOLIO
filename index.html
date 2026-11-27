@@ -400,6 +400,29 @@
             border-color: var(--accent);
         }
 
+        .mobile-socials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 16px;
+        }
+
+        .mobile-socials a {
+            padding-bottom: 2px;
+            border-bottom: 1px solid transparent;
+            color: var(--muted);
+            font-family: var(--mono);
+            font-size: 0.56rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: color 0.25s ease, border-color 0.25s ease;
+        }
+
+        .mobile-socials a:hover,
+        .mobile-socials a:focus-visible {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
         body.menu-open {
             overflow: hidden;
         }
@@ -1443,6 +1466,39 @@
             border-color: var(--paper);
         }
 
+        .contact-socials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px 18px;
+            margin-top: 18px;
+        }
+
+        .contact-socials a {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding-bottom: 2px;
+            border-bottom: 1px solid transparent;
+            color: rgba(247, 242, 232, 0.62);
+            font-family: var(--mono);
+            font-size: 0.56rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: color 0.25s ease, border-color 0.25s ease;
+        }
+
+        .contact-socials a:hover,
+        .contact-socials a:focus-visible {
+            color: var(--accent-soft);
+            border-color: var(--accent-soft);
+        }
+
+        .contact-socials svg {
+            width: 10px;
+            height: 10px;
+            flex: 0 0 auto;
+        }
+
         .contact-note {
             min-height: 18px;
             margin: 12px 0 0;
@@ -2014,12 +2070,18 @@
                         <span class="status-dot" aria-hidden="true"></span>
                         Terbuka untuk peluang magang
                     </span>
-                    <a class="mobile-email" href="mailto:luckythimotnugroho@gmail.com">
-                        luckythimotnugroho@gmail.com
+                    <a class="mobile-email" href="mailto:luckythimotngroho@gmail.com">
+                        luckythimotngroho@gmail.com
                         <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
                             <path d="M4 12L12 4M5 4h7v7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
+
+                    <div class="mobile-socials" aria-label="Profil dan kontak lainnya">
+                        <a href="https://github.com/luckytimothy24-a11y" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://linkedin.com/in/luckytimoty" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://wa.me/6282140434148" target="_blank" rel="noopener">WhatsApp</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2160,6 +2222,10 @@
                                 <div>
                                     <dt>Fokus</dt>
                                     <dd>Web Development</dd>
+                                </div>
+                                <div>
+                                    <dt>Lokasi</dt>
+                                    <dd>Yogyakarta, Indonesia</dd>
                                 </div>
                                 <div>
                                     <dt>Status</dt>
@@ -2446,15 +2512,15 @@
                             Saya terbuka untuk peluang magang, kolaborasi proyek, serta diskusi seputar pengembangan web. Silakan hubungi saya melalui email.
                         </p>
 
-                        <a class="contact-email" href="mailto:luckythimotnugroho@gmail.com">
-                            luckythimotnugroho@gmail.com
+                        <a class="contact-email" href="mailto:luckythimotngroho@gmail.com">
+                            luckythimotngroho@gmail.com
                             <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
                                 <path d="M4 12L12 4M5 4h7v7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
 
                         <div class="contact-actions">
-                            <a class="button button-light" href="mailto:luckythimotnugroho@gmail.com?subject=Halo%20Lucky">
+                            <a class="button button-light" href="mailto:luckythimotngroho@gmail.com?subject=Halo%20Lucky">
                                 Kirim Email
                                 <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
                                     <path d="M2.5 4.5h11v7h-11z" stroke="currentColor" stroke-width="1.2"/>
@@ -2464,6 +2530,27 @@
                             <button class="button button-outline-light" id="copy-email" type="button">
                                 Salin Email
                             </button>
+                        </div>
+
+                        <div class="contact-socials" aria-label="Profil dan kontak lainnya">
+                            <a href="https://github.com/luckytimothy24-a11y" target="_blank" rel="noopener">
+                                GitHub
+                                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                    <path d="M4 12L12 4M5 4h7v7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/luckytimoty" target="_blank" rel="noopener">
+                                LinkedIn
+                                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                    <path d="M4 12L12 4M5 4h7v7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/6282140434148" target="_blank" rel="noopener">
+                                WhatsApp
+                                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                    <path d="M4 12L12 4M5 4h7v7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
                         </div>
 
                         <p class="contact-note" id="copy-status" aria-live="polite"></p>
@@ -2589,7 +2676,7 @@
             // Salin email
             const copyBtn = document.getElementById('copy-email');
             const copyStatus = document.getElementById('copy-status');
-            const email = 'luckythimotnugroho@gmail.com';
+            const email = 'luckythimotngroho@gmail.com';
             const originalCopyLabel = copyBtn.textContent.trim();
 
             copyBtn.addEventListener('click', async () => {
