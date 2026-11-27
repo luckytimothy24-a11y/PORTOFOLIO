@@ -1433,6 +1433,39 @@
             transform: translate(2px, -2px);
         }
 
+        .contact-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid rgba(247, 242, 232, 0.35);
+            font-family: var(--serif);
+            font-size: clamp(1.12rem, 2vw, 1.5rem);
+            font-weight: 400;
+            line-height: 1.4;
+            letter-spacing: -0.02em;
+            transition: color 0.25s ease, border-color 0.25s ease;
+        }
+
+        .contact-whatsapp svg {
+            width: 14px;
+            height: 14px;
+            flex: 0 0 auto;
+            transition: transform 0.3s var(--ease);
+        }
+
+        .contact-whatsapp:hover,
+        .contact-whatsapp:focus-visible {
+            color: var(--accent-soft);
+            border-color: var(--accent-soft);
+        }
+
+        .contact-whatsapp:hover svg,
+        .contact-whatsapp:focus-visible svg {
+            transform: translate(2px, -2px);
+        }
+
         .contact-actions {
             display: flex;
             flex-wrap: wrap;
@@ -1982,6 +2015,10 @@
                 font-size: 1.02rem;
             }
 
+            .contact-whatsapp {
+                font-size: 1.02rem;
+            }
+
             .contact-actions {
                 gap: 8px;
             }
@@ -2068,6 +2105,13 @@
                 <div class="mobile-menu-meta">
                     <a class="mobile-email" href="mailto:luckythimotngroho@gmail.com">
                         luckythimotngroho@gmail.com
+                        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                            <path d="M4 12L12 4M5 4h7v7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+
+                    <a class="mobile-email" href="https://wa.me/6282140434148" target="_blank" rel="noopener">
+                        0821-4043-4148
                         <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
                             <path d="M4 12L12 4M5 4h7v7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -2505,6 +2549,13 @@
 
                         <a class="contact-email" href="mailto:luckythimotngroho@gmail.com">
                             luckythimotngroho@gmail.com
+                            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M4 12L12 4M5 4h7v7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+
+                        <a class="contact-whatsapp" href="https://wa.me/6282140434148" target="_blank" rel="noopener">
+                            0821-4043-4148
                             <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
                                 <path d="M4 12L12 4M5 4h7v7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
